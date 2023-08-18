@@ -1,0 +1,26 @@
+update 1.3.2:
+  1. gonna try to update /quote to no longer respond to the person using the / command, similar to the way /kick and /ban work with the message responses.
+  2. funny thing that runs / boo on user Happyhat_47 (ID : 625362014029742110). either 10% chance or 1 in 10 messages
+  3. add an option to /help for moderation commands. EX : /help mod and /help general (last one only if needed)
+  4. change pfp to the one hat sent me (see ./patchnotes/1.3.2_patchnotes.json)
+  5. rename data.json to imagedata.json to make more sense for devs
+  6. add console.log to commands for command usage data
+
+update 1.3.2 checklist
+  1. Confirmed? Y/N : Y
+     Done? Y/N : Y
+
+  2. Confirmed? Y/N : N
+     Done? Y/N : N
+
+  3. Confirmed? Y/N : Y
+     Done? Y/N : Y
+  
+  4. Confirmed? Y/N : Y
+     Done? Y/N : Y - Do at update launch
+  
+  5. Confirmed? Y/N : Y
+     Done? Y/N : Y
+
+  6. Confirmed? Y/N : N - pushed back to 1.4.0
+     Done? Y/N : N
