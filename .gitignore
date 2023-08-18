@@ -1,0 +1,14 @@
+# Ignore pls
+*
+/justincase.txt
+
+# Don't ignore pls
+!.gitignore
+!src/
+!patchnotes/
+!/imagedata.json
+!/index.js
+!/package-lock.json
+!/package.json
+!/README.md
+!/server.js
