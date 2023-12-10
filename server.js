@@ -2,7 +2,7 @@ const express = require('express');
 const server = express();
 
 server.all(`/`, (req, res) => {
-    res.send(`Result: [p.OS v1.3.2 IS ONLINE]. - (you aren't supposed to be here, but you found secret p.OS 24/7 server mannn)`);
+    res.send(`Result: [p.OS v1.3.3.1 IS ONLINE]. - (you aren't supposed to be here, but you found secret p.OS 24/7 server mannn)`);
 });
 
 function keepAlive() {

@@ -24,16 +24,24 @@ module.exports = {
     const confirmMessage = `sent successfully`
     
 		const newMessage = `${interaction.options.getString('text')}`
-
+    
+	// client.channels.cache.get('1142473509013041253').send(`${newMessage.message.id} ${interaction.user.id} ${interaction.options.getString('text')}`)
+		
+if (interaction.options.getString('text').includes('@everyone') || interaction.options.getString('text').includes('@here')) {return(
+  channel.send(`Nice try <@${interaction.user.id}> you can\'t ping everyone or here using /say`),
+  client.channels.cache.get('1142473509013041253').send(`hey <@907055124503994398>\n**<@${interaction.user.id}>** tried to ping everyone and/or here in **<#${interaction.channel.id}>** in server **${interaction.guild}**`),
+  await interaction.reply({
+    content: 'pirate knows what you tried to do. savor your time here, for you have little left...',
+  ephemeral: true
+  })
+)} else {
+client.channels.cache.get('1142473509013041253').send(`**<@${interaction.user.id}>** sent message **${interaction.options.getString('text')}** in **<#${interaction.channel.id}>** in server **${interaction.guild}**`),
+  interaction.channel.send({
+			content: newMessage
+    });
+}
     await interaction.reply({
       content: confirmMessage, ephemeral: true
     })
-    
-	// client.channels.cache.get('1142473509013041253').send(`${newMessage.message.id} ${interaction.user.id} ${interaction.options.getString('text')}`)
-	client.channels.cache.get('1142473509013041253').send(`**<@${interaction.user.id}>** sent message **${interaction.options.getString('text')}** in **<#${interaction.channel.id}>** in server **${interaction.guild}**`)
-		channel.send({
-			content: newMessage
-		});
-
 	}
 }
